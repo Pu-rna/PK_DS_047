@@ -1,0 +1,170 @@
+PASSWORD OF GITHUB: purna042004
+PASSWORD OF purnakundu: kundu@05042004
+
+
+
+
+
+
+ASG 6: Upload a static website in s3********************
+index.html.................
+<!DOCTYPE html>
+<html>
+<title>Page Title</title>
+</head>
+<body>
+<h1>This is a Heading</h1>
+<p>This is a paragraph.</p>
+<a href="https://www.google.co.in/">Google</a>
+<a href="next.html">Next</a>
+</body>
+</html>
+
+next.html....................
+<!DOCTYPE html>
+<html>
+<head>
+<title>Next</title>
+</head>
+<body>
+<h1>This is a Next</h1>
+<p>This is a Next</p>
+</body>
+</html>
+
+	-------------------------------------------------
+ASG7: Hosting a website on EC2*********************
+apt-get update 
+apt-get upgrade 
+apt-get install nginx
+
+after the steps in New SFTP Window...
+
+cd ..
+cd ..
+cd var
+cd www
+sudo chmod 777 html
+	----------------------------------------------------
+
+ASG8:Deploy a project from local machine to github and vice versa***********************
+
+git init
+git add .
+git commit -m "First Commit"
+git config --global user.email "purnakundu04@gmail.com"
+git config --global user.name "Pu-rna"
+git remote add origin https://github.com/Pu-rna/PK_888.git 
+git push -u origin master
+
+For git to machine.......
+git clone https://github.com/Pu-rna/PK_888.git
+
+{Rahul:
+	git init
+	git add .
+	git commit -m "First Commit"
+	git branch -M master
+	git remote add origin https://github.com/mr-
+	das-prasenjit-GitHub/pd_private1.git
+	git push -u origin master
+	git clone https://github.com/mr-das-
+	prasenjit-GitHub/pd_private1.git
+	ls
+	cd pd_private1/
+	git pull origin master
+}
+	-----------------------------------------
+ASG9: Deploy a project from Github to Ec2.*********************
+
+launch instance->github settings->developer settings->token access->generate new token->connect with bitvash->give the code...............
+sudo apt-get install update
+sudo apt-get install upgrade
+sudo apt-get install nginx
+nginx -v
+curl -sL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+sudo apt install nodejs
+node -v
+git clone https://github.com/Pu-rna/AWS_New_Purna_cseds47.git
+ls
+cd AWS_New_Purna_cseds47
+ls
+npm install
+node index.js
+
+then open ipv4 add in incognito->edit inbound rule-> search with port...........
+
+	------------------------------------------------
+
+ASG10: Deploy a project from github to ec2 by creating new security group and user data.***************************************
+
+User Data.............
+#!/bin/bash
+apt-get update -y
+apt-get upgrade -y
+apt-get install -y nginx
+systemctl start nginx
+systemctl enable nginx
+apt-get install -y git
+curl -sL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+apt-get install -y nodejs
+
+launched instance->go to github cp code->go to bitvish terminal enter this code.........
+node -v
+git clone https://github.com/Pu-rna/AWS_New_Purna_cseds47.git
+ls
+cd AWS_New_Purna_cseds47
+ls
+npm install
+node index.js
+	---------------------------------------------------
+
+ASG12: Deploy and run the project in AWS without using the port.****************************
+
+#!/bin/bash
+apt-get update -y
+apt-get upgrade -y
+apt-get install -y nginx
+systemctl start nginx
+systemctl enable nginx
+apt-get install -y git
+curl -sL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+apt-get install -y nodejs
+git clone https://github.com/Pu-rna/AWS_New_Purna_cseds47.git
+cd AWS_New_Purna_cseds47
+npm install
+node index.js
+
+launch instance->cp ip add connect with bitvish->open terminal->..................
+
+cd ..
+cd ..
+cd etc
+cd nginx
+cd sites-available
+
+cd /etc/nginx/sites-available...............
+
+ls 
+sudo chmod 777 default
+nano default
+
+server started..-> under location /{ #try -> write code.....................
+			proxy_pass http://localhost:4000;
+                        proxy_http_version 1.1;
+                        proxy_set_header Upgrade $http_upgrade;
+                        proxy_set_header Connection 'Upgrade';
+                        proxy_set_header Host $host;
+                        proxy_cache_bypass $http_upgrade;
+run terminal-> check incognito.................
+
+sudo systemctl restart nginx 
+
+cd ~ 
+cd <directory name>/
+node index.js 
+
+		--------------------------------------------
+
+
+
